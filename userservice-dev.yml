@@ -4,7 +4,6 @@ server:
 spring:
   application:
     name: user-service
-  profiles: dev
   h2:
     console:
       enabled: true
