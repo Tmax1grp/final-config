@@ -26,7 +26,12 @@ spring:
 #    sampler:
 #      probability: 1.0
 
+
 # 유레카
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}  
+
 
 management:
   endpoints:
