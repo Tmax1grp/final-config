@@ -33,7 +33,8 @@ eureka:
     fetch-registry: true
     # 유저서버 등록, 랜덤포트
     eureka-server-url:
-      defaultZone: http://localhost:8761/eureka
+#       defaultZone: http://localhost:8761/eureka
+      defaultZone: http://10.10.20.36:8761/eureka
   instance:
     instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}  
     hostname: 10.10.20.52
